@@ -1,8 +1,11 @@
-import app from './app';
+// import express from 'express';
 import dotenv from 'dotenv';
-dotenv.config();
 
+import app from './app'
+
+dotenv.config();
 const PORT = process.env.PORT || 5000;
 
-//Iniciar servidor
-app.listen(PORT, () => console.log(`bora codar gurizada`));
+
+
+app.listen(process.env.PORT, () => console.log(`Running on port ${PORT}!`));
